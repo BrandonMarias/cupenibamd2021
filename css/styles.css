@@ -154,6 +154,14 @@ background: linear-gradient(100deg, rgba(25,228,72,1) 0%, rgba(13,196,179,1) 100
 background: linear-gradient(140deg, rgba(154,42,230,1) 0%, rgba(242,164,55,1) 100%);
 }
 
+#codigo-etica{
+   background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+#modelo-educativo{
+   background: rgb(239,63,251);
+background: radial-gradient(circle, rgba(239,63,251,1) 0%, rgba(70,252,122,1) 100%);
+}
 /***************ir arriba******************/
 
 .gotop-container{
@@ -214,7 +222,7 @@ div.fondo{
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   border-radius: 10px;
+   border-radius: 10px 10px 0 0;
 }
 
 #section2  div.fondo{
@@ -232,8 +240,35 @@ div.fondo{
 
 }
 
+@media (min-width: 768px){
+   html{
+      font-size: 16px;
+   }
+
+   #contenedor-home,article.contenedor{
+      width: 70vw;
+   }
+   .gotop-container{
+      bottom: 1.5rem;
+      right: 1.5rem;
+   }
+
+}
 
 
+@media (min-width: 1024px) {
+   html{font-size: 18px;}
+   
+
+   #contenedor-home,article.contenedor{
+      max-width: 30vw;
+   }  
+   .gotop-container{
+      bottom: 2rem;
+      right: 2rem;
+   }
+}
+/*****************text tarjetas  **********************/
 .info{
    width: 100%;
    padding: 25px;
@@ -243,6 +278,7 @@ h2{
    font-family: var(--font2--);
    text-transform: capitalize;
    padding-bottom: 15px;
+   padding-top: 15px;
 }
 .info p{
    font-family: var(--font1--);
@@ -260,7 +296,7 @@ padding-bottom: 50px;
 
 }
 
-
+/******************contacto********************/
 ul.redes{
    width: 100%;
    list-style: none;
@@ -287,39 +323,20 @@ ul.redes li a{
 }
 
 
-
-
-
-
-
-@media (min-width: 768px){
-   html{
-      font-size: 16px;
-   }
-
-   #contenedor-home,article.contenedor{
-      width: 50vw;
-   }
-   .gotop-container{
-      bottom: 1.5rem;
-      right: 1.5rem;
-   }
-
+/********modelo educativo**********/
+#modelo-educativo img, #codigo-etica img{
+   width: 100%;
+   max-width: 100%;
+   border-radius: 0 0 10px 10px;
 }
 
 
-@media (min-width: 1024px) {
-   html{font-size: 18px;}
-   
 
-   #contenedor-homearticle.contenedor{
-      max-width: 30vw;
-   }
-   .gotop-container{
-      bottom: 2rem;
-      right: 2rem;
-   }
+/******************reglamento escolar***************/
+
+#reglamento article{
+   max-width: 80vw;
 }
 
-/*************Reglamento*************/
+
 
