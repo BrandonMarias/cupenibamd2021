@@ -14,61 +14,53 @@
   </head>
   <body>
     <main class="slides">
-      <a href="#section1">
+
+      <a href="#home">
         <div class="gotop-container">
           <div class="gotop">
             <i class="fas fa-angle-up"></i>
           </div>
         </div>
       </a>
+      
+      <section class="slide-home" id="home">
 
-      <section class="slide" id="section1">
-        <article id="contenedor-home">
+
+        <div class="contenedor-nav">
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li>
+                <a href="">Mis metas</a>
+                <ul>
+                  <li><a href="#section3">metas académicas</a></li>
+                  <li><a href="#section4">metas laborales</a></li>
+                  <li><a href="#section5">metas personales</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Tareas</a>
+                <ul>
+                 <li><a href="#reglamento">reglamento escolar</a></li>
+                  <li><a href="#modelo-educativo">modelo educativo</a></li>
+                  <li><a href="#codigo-etica">código de ética</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#section6">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+
+        <article class="contenedor" id="contenedor-home">
           <div id="picture">
             <a href="#">
               <img src="/img/mi.jpg" alt="image de perfil" />
             </a>
           </div>
           <h1>brandon andres marias doroteo</h1>
-          <nav>
-            <ul>
-              <li id="opcion1">
-                <a href="#section2">
-                  <p>presentación</p>
-                </a>
-              </li>
-              <li id="opcion2">
-                <a href="#section3">
-                  <p>meta académica</p>
-                </a>
-              </li>
-              <li id="opcion3">
-                <a href="#section4">
-                  <p>meta laboral</p>
-                </a>
-              </li>
-              <li id="opcion4">
-                <a href="#section5">
-                  <p>meta personal</p>
-                </a>
-              </li>
-              <li id="opcion-reglamento">
-                <a href="#reglamento">
-                  <p>reglamento UnADM</p>
-                </a>
-              </li>
-              <li id="opcion5">
-                <a href="#section6">
-                  <p>contacto</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </section>
-      <section class="slide" id="section2">
-        <article class="contenedor" id="tarjeta1">
-          <div class="fondo"></div>
           <div class="info">
             <h2>¿quién soy yo?</h2>
             <p>
@@ -84,6 +76,10 @@
           </div>
         </article>
       </section>
+
+
+
+
       <section class="slide" id="section3">
         <article class="contenedor">
           <div class="fondo"></div>
@@ -133,13 +129,14 @@
 
       <section class="slide" id="reglamento">
         <article class="contenedor">
+          <h2>reglamento escolar</h2>
           <iframe
             src="https://app.mural.co/embed/957251da-9185-4698-bfd3-2678c98e638d"
             width="100%"
             height="480px"
             style="
               min-width: 100%;
-              min-height: 100%;
+              height: 60vh;
               background-color: #ffa1fa;
               border: 1px solid #efefef;
               border-radius: 10px;

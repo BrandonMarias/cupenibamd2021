@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap');
+
+:root{
+   --font1--: 'Roboto', sans-serif;
+   --font2--: 'Roboto Slab', serif;
+}
+:root{
+   --color-1: #FA51A3;
+   --color-2: #3EEAF0;
+   --color-3: #FCD735;
+   --color-4: #6149fb;
+   --color-5: #4DD92E;
+}
+
+/*
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+
+*/
 html{
    box-sizing: border-box;
    font-size: 14px;
+   font-family: var(--font1--);
 }
 
 *,*::after,*::before{
@@ -11,18 +32,7 @@ html{
    margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap');
 
-:root{
-   --font1--: 'Roboto', sans-serif;
-   --font2--: 'Roboto Slab', serif;
-}
-/*
-
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-
-*/
 
 /****************** Efectos slides ****************/
 
@@ -35,7 +45,7 @@ main.slides{
 }
 
 section.slide{
-   height: inherit;
+   height: 100%;
    width: 100%;
    scroll-snap-align: center;
 
@@ -46,31 +56,30 @@ section.slide{
    
 }
 
-/****************** inicio ****************/
-#section1{
-   background-color: #ffffff;
+section.slide-home{
+   height: 100%;
+   width: 100%;
+   scroll-snap-align: center;
 }
+
+/****************** inicio ****************/
+
 section{
-   padding-bottom: 2.5rem;
+   padding-bottom: 2rem;
 }
 #contenedor-home{
-   height: 90vh;
    width: 80vw;
-
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   align-content: center;
+margin: 20px auto;
+padding-top: 10px;
 }
 
-#section1 h1{
+h1{
    text-transform: uppercase;
    font-size: 1.2rem;
    margin-top: 1rem;
    font-family: var(--font1--);
    text-align: center;
    font-weight: bold;
-   padding-bottom: 2.5rem;
 }
 
 
@@ -81,52 +90,14 @@ section{
    box-shadow: 1px 4px 5px rgb(149, 149, 149);
 }
 
-
 /***************opciones****************/
 
-nav{
-   width: 100%;
-}
-
-nav ul{
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   width: inherit;
-}
-
-nav ul li{
-   transition: all .5s ease;
-
-   height: 2.5rem;
-   width: inherit;
-   margin-top: 1rem;
-   border-radius: 1rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-li a{
-   width: inherit;
-   text-align: center;
-   text-decoration: none;
-   color: #ffffff;
-   font-size: 1rem;
-   text-transform: uppercase;
-   font-family: var(--font2--);
-   letter-spacing: .2rem;
-   font-weight: bold;
-}
-
-li:hover{
-   transform: scale(1.1);
-   transition: all .5s ease;
-}
 
 
-#opcion1,#section2{
+
+#opcion1,div.contenedor-nav{
    background: rgb(47,220,255);
-   background: linear-gradient(100deg, rgba(47,220,255,1) 0%, rgba(0,255,214,1) 100%);
+   background: linear-gradient(100deg, rgb(39, 184, 212) 0%, rgb(1, 182, 152) 100%);
 }
 
 #opcion2,#section3{
@@ -162,6 +133,71 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
    background: rgb(239,63,251);
 background: radial-gradient(circle, rgba(239,63,251,1) 0%, rgba(70,252,122,1) 100%);
 }
+
+
+
+/*barra de naveggacion*/
+div.contenedor-nav{
+
+   position: static;
+   top: 0;
+   width: 100%;
+}
+nav{
+   width: 100%;
+   padding: 0 auto;
+   position: relative;
+   font-weight: 900;
+
+}
+
+nav ul{
+   list-style: none;
+   width: inherit;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+nav ul li:hover{
+   background-color: var(--color-2);
+   font-size: 1rem;
+}
+a{
+   text-decoration: none;
+
+}
+nav ul li a{
+   display: inline-flex;
+   padding: 20px;
+   color: white;
+   text-transform: uppercase;
+   text-align: center;
+   width: 150px;
+
+
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* desplegar sedundo nivel*/
+
+ul > li > ul{
+   display: none;
+   position: absolute;
+   margin: 0;
+   top: 100%;
+   background-color: var(--color-4);
+}
+
+nav ul li:hover > ul{
+   display: block;
+}
+
+
 /***************ir arriba******************/
 
 .gotop-container{
@@ -245,8 +281,11 @@ div.fondo{
       font-size: 16px;
    }
 
-   #contenedor-home,article.contenedor{
-      width: 70vw;
+   article.contenedor{
+      width: 80vw;
+   }
+   #contenedor-home{
+      max-width: 40vw;
    }
    .gotop-container{
       bottom: 1.5rem;
@@ -259,8 +298,10 @@ div.fondo{
 @media (min-width: 1024px) {
    html{font-size: 18px;}
    
-
-   #contenedor-home,article.contenedor{
+   #contenedor-home{
+      max-width: 40vw;
+   }
+   article.contenedor{
       max-width: 30vw;
    }  
    .gotop-container{
@@ -282,6 +323,7 @@ h2{
 }
 .info p{
    font-family: var(--font1--);
+   font-weight: 600;
    text-align: justify;
    text-indent: 1rem;
    font-size: 1rem;
@@ -337,6 +379,5 @@ ul.redes li a{
 #reglamento article{
    max-width: 80vw;
 }
-
 
 
