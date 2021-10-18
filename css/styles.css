@@ -199,6 +199,7 @@ article.contenedor{
 -moz-box-shadow: 12px 13px 28px -7px rgba(0,0,0,0.75);
 box-shadow: 12px 13px 28px -7px rgba(0,0,0,0.75);
 
+   border-radius: 10px;
 }
 .filtro{
    background-color: rgba(34, 34, 34, 1);
@@ -213,6 +214,7 @@ div.fondo{
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+   border-radius: 10px;
 }
 
 #section2  div.fondo{
@@ -281,6 +283,7 @@ ul.redes li a{
    text-align: center;
    padding: 10px;
    background-color: rgb(42, 42, 42);
+   border-radius: 0 0 10px 10px;
 }
 
 
