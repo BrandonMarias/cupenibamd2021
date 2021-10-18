@@ -14,7 +14,6 @@
   </head>
   <body>
     <main class="slides">
-
       <a href="#home">
         <div class="gotop-container">
           <div class="gotop">
@@ -22,16 +21,16 @@
           </div>
         </div>
       </a>
-      
+
       <section class="slide-home" id="home">
-
-
         <div class="contenedor-nav">
           <nav>
-            <ul>
-              <li><a href="#">Inicio</a></li>
+            <ul id="menu-desktop">
               <li>
-                <a href="">Mis metas</a>
+                <a href="#"><i class="fas fa-home"></i> Inicio</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-flag"></i>Mis metas</a>
                 <ul>
                   <li><a href="#section3">metas académicas</a></li>
                   <li><a href="#section4">metas laborales</a></li>
@@ -39,20 +38,39 @@
                 </ul>
               </li>
               <li>
-                <a href="#">Tareas</a>
+                <a href="#"><i class="fas fa-book-reader"></i>Tareas</a>
                 <ul>
-                 <li><a href="#reglamento">reglamento escolar</a></li>
+                  <li><a href="#reglamento">reglamento escolar</a></li>
                   <li><a href="#modelo-educativo">modelo educativo</a></li>
                   <li><a href="#codigo-etica">código de ética</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#section6">Contacto</a>
+                <a href="#section6"><i class="fas fa-user"></i>Contacto</a>
               </li>
             </ul>
+
+            <div id="menu-mobil">
+              <span>cupenibamd2021</span>
+              <i class="fas fa-bars" id="boton-menu"></i>
+
+              <ul id="desplegable">
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+
+                <li id="menu-metas"><i class="fas fa-flag"></i>Mis metas</li>
+                <li class="hidden-metas" id="meta1"><a href="#section3">metas académicas</a></li>
+                <li class="hidden-metas" id="meta2"><a href="#section4">metas laborales</a></li>
+                <li class="hidden-metas" id="meta3"><a href="#section5">metas personales</a></li>
+
+                <li id="menu-tareas"><a href="#"><i class="fas fa-book-reader"></i>Tareas</a></li>
+                <li class="hidden-metas" id="tarea1"><a href="#reglamento">reglamento escolar</a></li>
+                <li class="hidden-metas" id="tarea2"><a href="#modelo-educativo">modelo educativo</a></li>
+                <li class="hidden-metas" id="tarea3"><a href="#codigo-etica">código de ética</a></li>
+                <li><a href="#section6"><i class="fas fa-user"></i>contacto</a></li>
+              </ul>
+            </div>
           </nav>
         </div>
-
 
         <article class="contenedor" id="contenedor-home">
           <div id="picture">
@@ -76,9 +94,6 @@
           </div>
         </article>
       </section>
-
-
-
 
       <section class="slide" id="section3">
         <article class="contenedor">
@@ -146,18 +161,18 @@
           </iframe>
         </article>
       </section>
-        <!--modelo educativo-->
+      <!--modelo educativo-->
       <section class="slide" id="modelo-educativo">
         <article class="contenedor">
           <h2>modelo educativo</h2>
-          <img src="/img/modelo-educativo.svg" alt="Modelo Educativo">
+          <img src="/img/modelo-educativo.svg" alt="Modelo Educativo" />
         </article>
       </section>
 
       <section class="slide" id="codigo-etica">
         <article class="contenedor">
-         <h2>código de ética</h2>
-         <img src="/img/etica.svg" alt="Codigo de ética">
+          <h2>código de ética</h2>
+          <img src="/img/etica.svg" alt="Codigo de ética" />
         </article>
       </section>
 
@@ -167,9 +182,7 @@
             <h2>mis contactos</h2>
             <ul class="redes">
               <li>
-                <a
-                  href="https://www.facebook.com/"
-                  target="_blank"
+                <a href="https://www.facebook.com/" target="_blank"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
               </li>
@@ -203,5 +216,6 @@
     </main>
 
     <script src="/js/arriba.js"></script>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
