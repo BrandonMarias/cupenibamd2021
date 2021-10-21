@@ -97,40 +97,40 @@ h1{
 
 
 #opcion1,div.contenedor-nav{
-   background: rgb(47,220,255);
+   background: #2fdcff;
    background: linear-gradient(100deg, rgb(39, 184, 212) 0%, rgb(1, 182, 152) 100%);
 }
 
-#opcion2,#section3{
-   background: rgb(111,19,223);
+#opcion2,#section3,#i1{
+   background: #6f13df;
    background: linear-gradient(100deg, rgba(111,19,223,1) 0%, rgba(196,0,255,1) 100%);
 }
 
-#opcion3,#section4{
+#opcion3,#section4,#i2{
    background: rgb(209,24,232);
 background: linear-gradient(100deg, rgba(209,24,232,1) 0%, rgba(227,22,57,1) 100%);
 }
 
-#opcion4,#section5{
+#opcion4,#section5,#i3{
    background: rgb(241,128,14);
 background: linear-gradient(100deg, rgba(241,128,14,1) 0%, rgba(223,200,14,1) 100%);
 }
 
-#opcion5,#section6{
+#opcion5,#section6,#i4{
    background: rgb(25,228,72);
 background: linear-gradient(100deg, rgba(25,228,72,1) 0%, rgba(13,196,179,1) 100%);
 }
 
-#opcion-reglamento,#reglamento{
+#opcion-reglamento,#reglamento,#i5{
    background: rgb(154,42,230);
 background: linear-gradient(140deg, rgba(154,42,230,1) 0%, rgba(242,164,55,1) 100%);
 }
 
-#codigo-etica{
+#codigo-etica,#i6{
    background: rgb(63,94,251);
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
-#modelo-educativo{
+#modelo-educativo,#i7{
    background: rgb(239,63,251);
 background: radial-gradient(circle, rgba(239,63,251,1) 0%, rgba(70,252,122,1) 100%);
 }
