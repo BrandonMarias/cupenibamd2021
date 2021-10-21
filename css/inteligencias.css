@@ -1,0 +1,19 @@
+.img-inteligencias{
+   width: 100%;
+}
+
+.contenedor{
+   width: 70vw;
+}
+
+@media (min-width: 1024px){
+article.contenedor {
+    max-width: 80vw;
+}
+}
+
+@media (min-width: 768px){
+   article.contenedor {
+       max-width: 80vw;
+   }
+   }

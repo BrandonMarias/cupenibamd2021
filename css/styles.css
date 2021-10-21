@@ -42,7 +42,7 @@ main.slides{
    overflow-y: scroll;
    overflow-x: hidden;
    scroll-snap-type: block mandatory;
-   scroll-behavior: smooth;
+   scroll-behavior: smooth !important;
 }
 
 section.slide{
@@ -187,7 +187,9 @@ nav ul li{
    justify-content: center;
    align-items: center;
 }
-
+li{
+   cursor: pointer;
+}
 #home nav i{
    padding-right: .5rem;
 }
@@ -226,6 +228,7 @@ nav ul li:hover > ul{
    cursor: pointer;   
 }
 
+
 #desplegable{
    background-color: #5d5d5d;
    position: absolute;
@@ -238,11 +241,12 @@ nav ul li:hover > ul{
    transition: left .3s ease;
 }
 #desplegable li{
-   width: 100%;
    cursor: pointer;
+   width: 100%;
 }
 #desplegable a{
-   width: 100%;
+   display: block;
+   width: 100vw;
 }
 .show-menu{
    left: 0 !important;
