@@ -58,3 +58,11 @@ article.contenedor {
    border-radius: 20px;
    margin-top: 10px;
 }
+
+.WordSection1,.MsoTable15Grid5DarkAccent6{
+   width: 100%;
+   overflow-x: scroll;
+}
+main{
+   overflow-x: hidden;
+}
