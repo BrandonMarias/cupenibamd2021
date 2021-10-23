@@ -462,6 +462,7 @@ ul.redes li a{
 
 
 .hidden-metas{
+  z-index: 2;
    display: none;
 }
 .show-metas{
