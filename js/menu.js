@@ -1,7 +1,8 @@
 let menu = document.querySelector('#desplegable');
 let botonMenu = document.querySelector('#boton-menu');
 let mostrarMetas = document.querySelector("#menu-metas");
-let mostrarTareas = document.querySelector("#menu-tareas");
+let mostrarTareas = document.querySelector("#menu-tareas")
+let tarea5 = document.querySelector("tarea5")
 
 let link1 = document.getElementById("link1")
 let link2 = document.getElementById("link2")
