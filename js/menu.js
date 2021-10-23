@@ -127,7 +127,7 @@ function tareasToggle(){
       tarea3.classList.toggle("show-metas")
       tarea4.classList.toggle("show-metas")
       tarea5.classList.toggle("show-metas")
-      tarea5.classList.toggle("show-metas")
+      tarea6.classList.toggle("show-metas")
 }
 
 
