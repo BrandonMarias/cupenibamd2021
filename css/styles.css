@@ -167,7 +167,7 @@ nav ul li {
    transition: all .3s ease;
 
 }
-nav ul li:hover{
+nav ul#menu-desktop li:hover{
    background-color: var(--color-2);
    transition: all .3s ease;
 }
@@ -461,10 +461,9 @@ ul.redes li a{
 
 
 .hidden-metas{
-   height: 0;
    display: none;
 }
 .show-metas{
-   height: auto;
+
    display: block;
 }
