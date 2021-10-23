@@ -11,6 +11,8 @@ let link5 = document.getElementById("link5")
 let link6 = document.getElementById("link6")
 let link7 = document.getElementById("link7")
 let link8 = document.getElementById("link8")
+let link9 = document.getElementById('link9')
+let link10 = document.getElementById('link10')
 
 link1.addEventListener('click',()=>{
    menu.classList.toggle("show-menu")
@@ -84,6 +86,24 @@ link8.addEventListener('click',()=>{
       metasToggle();
       }
 });
+link9.addEventListener('click',()=>{
+   menu.classList.toggle("show-menu")
+   if(tarea1.classList.contains("show-metas")){
+      tareasToggle();
+   }
+   if(meta1.classList.contains("show-metas")){
+      metasToggle();
+      }
+});
+link10.addEventListener('click',()=>{
+   menu.classList.toggle("show-menu")
+   if(tarea1.classList.contains("show-metas")){
+      tareasToggle();
+   }
+   if(meta1.classList.contains("show-metas")){
+      metasToggle();
+      }
+});
 
 function metasToggle(){
    meta1.classList.toggle("show-metas")
@@ -95,6 +115,7 @@ function tareasToggle(){
       tarea2.classList.toggle("show-metas")
       tarea3.classList.toggle("show-metas")
       tarea4.classList.toggle("show-metas")
+      tarea5.classList.toggle("show-metas")
 }
 
 
