@@ -92,9 +92,9 @@ function metasToggle(){
 }
 function tareasToggle(){
    tarea1.classList.toggle("show-metas")
-      tarea2.classList.toggle("show-metas")
-      tarea3.classList.toggle("show-metas")
-      tarea4.classList.toggle("show-metas")
+   tarea2.classList.toggle("show-metas")
+   tarea3.classList.toggle("show-metas")
+   tarea4.classList.toggle("show-metas")
 }
 
 
@@ -112,7 +112,7 @@ mostrarMetas.addEventListener("click", () =>{
 
 mostrarTareas.addEventListener("click", () =>{
    tareasToggle();
-   if(meta1.classList.contains("show-metas")){
+   if(meta3.classList.contains("show-metas")){
    metasToggle();
    }
 })
