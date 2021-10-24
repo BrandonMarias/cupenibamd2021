@@ -2,6 +2,7 @@ let menu = document.querySelector('#desplegable');
 let botonMenu = document.querySelector('#boton-menu');
 let mostrarMetas = document.querySelector("#menu-metas");
 let mostrarTareas = document.querySelector("#menu-tareas");
+let padlet = document.getElementById("padlet")
 
 let link1 = document.getElementById("link1")
 let link2 = document.getElementById("link2")
@@ -133,6 +134,7 @@ function tareasToggle(){
 
 botonMenu.addEventListener("click", () => {
  menu.classList.toggle("show-menu");
+ padlet.classList.toggle("z-1");
 });
 
 mostrarMetas.addEventListener("click", () =>{
