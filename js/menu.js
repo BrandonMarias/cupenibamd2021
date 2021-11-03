@@ -15,7 +15,7 @@ let link8 = document.getElementById("link8")
 let link9 = document.getElementById('link9')
 let link10 = document.getElementById('link10')
 let link11 = document.getElementById('link11')
-
+let overFY = document.querySelector("main.slides");
 
 link1.addEventListener('click',()=>{
    menu.classList.toggle("show-menu")
@@ -132,10 +132,13 @@ function tareasToggle(){
 }
 
 
-botonMenu.addEventListener("click", () => {
- menu.classList.toggle("show-menu");
- padlet.classList.toggle("z-1");
-});
+botonMenu.addEventListener("click", function (){
+   menu.classList.toggle("show-menu");
+   padlet.classList.toggle("z-1");
+   overFY.classList.toggle("over-y");
+}
+   
+);
 
 mostrarMetas.addEventListener("click", () =>{
    metasToggle();
