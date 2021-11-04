@@ -3,119 +3,22 @@ let botonMenu = document.querySelector('#boton-menu');
 let mostrarMetas = document.querySelector("#menu-metas");
 let mostrarTareas = document.querySelector("#menu-tareas");
 let padlet = document.getElementById("padlet")
-
-let link1 = document.getElementById("link1")
-let link2 = document.getElementById("link2")
-let link3 = document.getElementById("link3")
-let link4 = document.getElementById("link4")
-let link5 = document.getElementById("link5")
-let link6 = document.getElementById("link6")
-let link7 = document.getElementById("link7")
-let link8 = document.getElementById("link8")
-let link9 = document.getElementById('link9')
-let link10 = document.getElementById('link10')
-let link11 = document.getElementById('link11')
 let overFY = document.querySelector("main.slides");
+let linksB = [];
 
-link1.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
+for(let i = 0; i < 11; i++){
+   linksB.push(document.getElementById("link" + (i + 1)));
+   linksB[i].addEventListener('click',()=>{
+      menu.classList.toggle("show-menu");
+      overFY.classList.toggle("over-y");
+      if(tarea1.classList.contains("show-metas")){
+         tareasToggle();
       }
-});
-link2.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link3.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link4.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link5.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link6.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link7.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link8.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link9.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link10.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
-link11.addEventListener('click',()=>{
-   menu.classList.toggle("show-menu")
-   if(tarea1.classList.contains("show-metas")){
-      tareasToggle();
-   }
-   if(meta1.classList.contains("show-metas")){
-      metasToggle();
-      }
-});
+      if(meta1.classList.contains("show-metas")){
+         metasToggle();
+         }
+   });
+}
 
 function metasToggle(){
    meta1.classList.toggle("show-metas")
@@ -131,14 +34,11 @@ function tareasToggle(){
       tarea6.classList.toggle("show-metas")
 }
 
-
 botonMenu.addEventListener("click", function (){
    menu.classList.toggle("show-menu");
    padlet.classList.toggle("z-1");
    overFY.classList.toggle("over-y");
-}
-   
-);
+});
 
 mostrarMetas.addEventListener("click", () =>{
    metasToggle();
@@ -146,12 +46,12 @@ mostrarMetas.addEventListener("click", () =>{
       tareasToggle();
    }
 
-})
+});
 
 mostrarTareas.addEventListener("click", () =>{
    tareasToggle();
    if(meta1.classList.contains("show-metas")){
    metasToggle();
    }
-})
+});
 
